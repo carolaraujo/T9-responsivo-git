@@ -21,7 +21,7 @@ main {
 }
 
 .navbar__box {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -63,14 +63,16 @@ main {
 
 /* SECTION */
 .posts {
-  width: 825px;
+  max-width: 825px;
   margin: 0 auto;
 }
 
 .half-column {
   display: inline-block;
-  height: 480px;
+  min-height: 200px;
   vertical-align: top;
+  margin-right: 0 auto;
+  display: block;
 }
 /* AUTHOR AREA */
 .posts__author-area {
@@ -99,8 +101,9 @@ main {
 
 /* MAIN AREA */
 .posts__main-area {
-  width: 600px;
+  max-width: 600px;
   margin-left: 20px;
+  width: 100%;
 }
 
 .posts__main-area h1 {
@@ -127,3 +130,29 @@ footer {
   /* height: 50px; */
 }
 
+@media screen and (max-width:900px){
+  .half-column{
+    min-height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.posts__main-area{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0 25px;
+}
+.navbar__box{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.navbar__nav{
+  display: none;
+}
+.navbar__menu-btn{
+  display: block;
+}
+.posts__title{
+  padding-top: 80px;
+}

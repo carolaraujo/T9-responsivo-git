@@ -51,7 +51,6 @@ main {
 }
 
 .todos:last-child {
-<<<<<<< HEAD
     margin-top:20px;
 }
 
@@ -65,22 +64,5 @@ main {
     }
     .todos:last-child{
         margin-top:0;
-=======
-    margin-top: 20px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .header-caixa {
-        flex-direction: column;
-    }
-
-    .todos {
-        flex-wrap: wrap;
-    }
-
-    .todos:last-child {
-        margin-top: 0;
->>>>>>> c031336e142a3bdb31239fc9866fdbb6386b4a41
     }
 }
